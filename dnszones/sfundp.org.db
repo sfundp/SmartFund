@@ -1,0 +1,50 @@
+; cPanel first:11.62.0.35 (update_time):1531178366 Cpanel::ZoneFile::VERSION:1.3 hostname:p3plvcpnl45609.prod.phx3.secureserver.net latest:11.64.0.42
+; Zone file for sfundp.org
+$TTL 14400
+sfundp.org.	86400	IN	SOA	72.167.234.193.	root.p3plvcpnl45609.prod.phx3.secureserver.net.	(
+						2018070901 ;Serial Number
+						3600 ;refresh
+						7200 ;retry
+						1209600 ;expire
+						86400	)
+; sfundp.org.	86400	IN	SOA	10.255.250.30.	hostingex.godaddy.com.	( ; Previous value removed by cPanel transfer auto-merge on 20180401194719 GMT
+; 						2018022403 ;Serial Number ; Previous value removed by cPanel transfer auto-merge on 20180401194719 GMT
+; 						3600 ;refresh ; Previous value removed by cPanel transfer auto-merge on 20180401194719 GMT
+; 						7200 ;retry ; Previous value removed by cPanel transfer auto-merge on 20180401194719 GMT
+; 						1209600 ;expire ; Previous value removed by cPanel transfer auto-merge on 20180401194719 GMT
+; 						86400	) ; Previous value removed by cPanel transfer auto-merge on 20180401194719 GMT
+
+sfundp.org.	86400	IN	NS	72.167.234.193.
+sfundp.org.	86400	IN	NS	72.167.234.194.
+; sfundp.org.	86400	IN	NS	10.255.250.30. ; Previous value removed by cPanel transfer auto-merge on 20180401194719 GMT
+; sfundp.org.	86400	IN	NS	10.255.251.30. ; Previous value removed by cPanel transfer auto-merge on 20180401194719 GMT
+
+
+sfundp.org.	14400	IN	A	132.148.97.128
+
+sfundp.org.	14400	IN	MX	0	sfundp.org.
+
+mail	14400	IN	CNAME	sfundp.org.
+www	14400	IN	CNAME	sfundp.org.
+ftp	14400	IN	A	132.148.97.128
+; ftp	14400	IN	A	107.180.25.212 ; Previous value removed by cPanel transfer auto-merge on 20180401194719 GMT
+
+sfundp.org.  IN TXT "v=spf1 ip4:132.148.97.128 +a +mx +ip4:198.71.234.15 ~all"
+cpanel	14400	IN	A	132.148.97.128
+webdisk	14400	IN	A	132.148.97.128
+cpcalendars	14400	IN	A	132.148.97.128
+cpcontacts	14400	IN	A	132.148.97.128
+whm	14400	IN	A	132.148.97.128
+webmail	14400	IN	A	132.148.97.128
+autoconfig	14400	IN	A	132.148.97.128
+autodiscover	14400	IN	A	132.148.97.128
+_autodiscover._tcp 14400 IN SRV 0 0 443 cpanelemaildiscovery.cpanel.net.
+_caldav._tcp 14400 IN SRV 0 0 2079 p3plvcpnl45609.prod.phx3.secureserver.net.
+_caldavs._tcp 14400 IN SRV 0 0 2080 p3plvcpnl45609.prod.phx3.secureserver.net.
+_carddav._tcp 14400 IN SRV 0 0 2079 p3plvcpnl45609.prod.phx3.secureserver.net.
+_carddavs._tcp 14400 IN SRV 0 0 2080 p3plvcpnl45609.prod.phx3.secureserver.net.
+_caldav._tcp	14400	IN	TXT	path=/
+_caldavs._tcp	14400	IN	TXT	path=/
+_carddav._tcp	14400	IN	TXT	path=/
+_carddavs._tcp	14400	IN	TXT	path=/
+default._domainkey	14400	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqnwUr1MJMgweHvLWkWc/o19Ly1IYcSaMU6wK8cVsjQD8lC4q3f57yUaRpwrbYKETBETjB0CIv4cJWHYBtQnn2CrMYy5Mul1bm0T7VW9Mgzc/pRMcFO4OWGV54GXkh7SzjHR+2ajsd0lEQIBvOLrIbjwm0v7SPJxTJBDXIWCscCchesNbSIU+2LO9oMN8cGnMZ" M+dvBD63U+KmPZDE0zYYdi0ej5Qvks7JN42TaZfY7n1V3Szi9fkWXC+mtfCfncsuZlv2L+Mds7hy7t1eXFY5+FSYTkCbLdetZLqEaivImXWi3gVnEmqLYfqkwP/1fRgnPcHEeXzjAp40WBRbagxSQIDAQAB\;
